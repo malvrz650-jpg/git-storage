@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Public File Storage</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4f1ea;
+        --panel: #fffdf8;
+        --text: #1f2933;
+        --muted: #52606d;
+        --line: #d9d2c3;
+        --accent: #7c5e10;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font: 16px/1.6 Georgia, "Times New Roman", serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(124, 94, 16, 0.08), transparent 36%),
+          linear-gradient(180deg, #f8f5ee 0%, var(--bg) 100%);
+      }
+
+      main {
+        max-width: 760px;
+        margin: 64px auto;
+        padding: 0 24px;
+      }
+
+      section {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 32px;
+        box-shadow: 0 20px 40px rgba(31, 41, 51, 0.08);
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 0 0 16px;
+      }
+
+      .note {
+        margin-top: 24px;
+        padding: 18px 20px;
+        border-left: 4px solid var(--accent);
+        background: rgba(124, 94, 16, 0.08);
+        color: var(--muted);
+      }
+
+      code {
+        font-family: "Courier New", monospace;
+        font-size: 0.95em;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Public File Storage</h1>
+        <p>This repository is used as a public file store served through GitHub Pages.</p>
+        <p>Files are published from stable paths under <code>files/</code>. Updating a file in the repository updates the content served from the same public URL after Pages redeploys.</p>
+        <div class="note">
+          Example URL pattern: <code>https://&lt;user&gt;.github.io/&lt;repo&gt;/files/docs/guide.pdf</code>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
